@@ -44,4 +44,19 @@ public class BusRestController {
     public Bus update(@RequestBody Bus bus) {
         return service.update(bus);
     }
+
+    @GetMapping("/hello/user")
+    public String helloUser() {
+        return "Hello User!";
+    }
+
+    @GetMapping("hello/admin")
+    public String helloAdmin() {
+        return "Hello Admin!";
+    }
+
+    @GetMapping("hello/unknown")
+    public String helloUnknown() {
+        return "Hello Unknown!";
+    }
 }
