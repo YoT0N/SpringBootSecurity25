@@ -1,0 +1,58 @@
+### GET ALL BUSES
+GET http://localhost:8080/api/v1/buses
+Authorization: Basic admin admin
+Accept: application/json
+
+### GET ONE BUS
+GET http://localhost:8080/api/v1/buses/1
+Authorization: Basic admin admin
+Accept: application/json
+
+### DELETE ONE BUS
+DELETE http://localhost:8080/api/v1/buses/1
+Authorization: Basic admin admin
+Accept: application/json
+
+### CREATE ONE BUS
+POST http://localhost:8080/api/v1/buses
+Authorization: Basic admin admin
+Content-Type: application/json
+Accept: application/json
+
+{
+  "countryNumber": "672902",
+  "boardingNumber": "AK 4212 JJ"
+}
+
+### UPDATE ONE BUS
+PUT http://localhost:8080/api/v1/buses
+Authorization: Basic admin admin
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "2",
+  "countryNumber": "294915",
+  "boardingNumber": "CE 3354 MO"
+}
+
+### GREETING ADMIN
+GET http://localhost:8080/api/v1/buses/hello/admin
+Authorization: Basic admin admin
+Accept: application/json
+
+### GREETING USER
+GET http://localhost:8080/api/v1/buses/hello/user
+Authorization: Basic admin admin
+Accept: application/json
+
+### GREETING UNKNOWM
+GET http://localhost:8080/api/v1/buses/hello/unknown
+Authorization: Basic admin admin
+Accept: application/json
+
+
+
+
+
+
